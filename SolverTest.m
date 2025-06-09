@@ -7,7 +7,7 @@ classdef SolverTest < matlab.unittest.TestCase
     end
     
     properties(TestParameter)
-        propTP = struct('TPfield1',1,'TPfield2',2)
+        propTP = struct('TPfield1',1,'TPfield2',2,'TPfield3',3)
     end
     
     properties(MethodSetupParameter)
