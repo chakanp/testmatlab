@@ -26,3 +26,4 @@ jobs:
         with:
             files: |
                 test-results/results.xml
+            report_individual_runs: "true"
