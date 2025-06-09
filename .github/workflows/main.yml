@@ -20,6 +20,6 @@ jobs:
       - name: Publish Test Results
         uses: EnricoMi/publish-unit-test-result-action@v2
         if: (!cancelled())
-            with:
-                files: |
-                    test-results/results.xml
+        with:
+            files: |
+                test-results/results.xml
