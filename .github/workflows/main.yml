@@ -16,4 +16,10 @@ jobs:
         if: always()
         with:
             name: test-results
-            path: test-results/results.xml            
+            path: test-results/results.xml       
+      - name: Publish Unit Test Results
+        uses: EnricoMi/publish-unit-test-result-action/composite@v1
+        if: always()
+        with:
+            files: test-results/results.xml
+            report_individual_runs: "true"            
